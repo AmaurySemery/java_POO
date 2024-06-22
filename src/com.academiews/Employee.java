@@ -5,12 +5,19 @@ public class Employee {
     private int baseSalary;
     private int hourlyRate;
 
+    // Constructeur pour initialiser des valeurs aux champs
+    public Employee(int baseSalary, int hourlyRate) {
+        setBaseSalary(baseSalary);
+        setHourlyRate(hourlyRate);
+    }
+
     // Les getter et les setter sont publiques pour pouvoir accéder à ses données et les modifier
+    // Elles peuvent être rendues privées en présence d'un constructeur, utiles ici si on ne veut pas modifier des salaires à la volée par exemple avec main
     public int getBaseSalary() { // getter ou accesseur
         return this.baseSalary;
     }
 
-    public void setBaseSalary(int baseSalary) { // setter ou mutateur
+    private void setBaseSalary(int baseSalary) { // setter ou mutateur
         if (baseSalary <= 0)
             throw new IllegalArgumentException("Salary cannot bet 0 or less !");
         this.baseSalary = baseSalary;
@@ -20,7 +27,7 @@ public class Employee {
         return hourlyRate;
     }
 
-    public void setHourlyRate(int hourlyRate) {
+    private void setHourlyRate(int hourlyRate) {
         if (hourlyRate <= 0)
             throw new IllegalArgumentException("Hour Rate Salary cannot bet 0 or less !");
         this.hourlyRate = hourlyRate;
