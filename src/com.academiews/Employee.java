@@ -37,4 +37,8 @@ public class Employee {
     public int calculateSalary(int extraHours) {
         return this.baseSalary + (extraHours * this.hourlyRate);
     }
+
+    public int calculateSalary() { // overloading (lié au polymorphisme) qui consiste à appeler plusieurs fois une même méthode avec des paramètres différents
+        return calculateSalary(0);
+    }
 }
