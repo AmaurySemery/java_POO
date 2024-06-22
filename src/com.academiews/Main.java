@@ -66,7 +66,9 @@ public static int calculateSalary(int baseSalary, int extraHours, int hourlyRate
 // Exemple avec utilisation d'un constructeur
 public static void main(String[] args) {
     var employee = new Employee(50_000, 50);
-    System.out.println(employee.calculateSalary(10));
+    System.out.println(employee.calculateSalary());
+
+    var employee2 = new Employee(70_000);
 
 }
 

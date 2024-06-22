@@ -5,6 +5,11 @@ public class Employee {
     private int baseSalary;
     private int hourlyRate;
 
+    // Overloading du constructeur pour n'implémenter que le baseSalary
+    public Employee(int baseSalary) {
+        setBaseSalary(baseSalary);
+    }
+
     // Constructeur pour initialiser des valeurs aux champs
     public Employee(int baseSalary, int hourlyRate) {
         setBaseSalary(baseSalary);
