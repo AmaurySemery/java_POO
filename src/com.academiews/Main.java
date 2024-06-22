@@ -41,4 +41,11 @@ public static int calculateSalary(int baseSalary, int extraHours, int hourlyRate
 
  */
 
+ public static void main(String[] args) {
+    var employee = new Employee();
+    employee.setBaseSalary(30_000);
+    employee.setHourlyRate(35);
+    System.out.println(employee.calculateSalary(20));
+ }
+
 }
