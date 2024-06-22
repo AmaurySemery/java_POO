@@ -2,7 +2,8 @@ package com.academiews;
 
 public class Main {
 
-/*   Exemple création de classe
+/*   
+Exemple création de classe
 
 public static void main(String[] args) {
         Vehicule car = new Vehicule();
