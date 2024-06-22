@@ -71,7 +71,7 @@ public static void main(String[] args) {
     var employee2 = new Employee(70_000);
     System.out.println(employee2.calculateSalary());
 
-    System.out.println(employee.nbrEmployees);
+    System.out.println(Employee.showNbrEmployees());
 
 }
 

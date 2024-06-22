@@ -52,4 +52,8 @@ public class Employee {
     public int calculateSalary() { // overloading (lié au polymorphisme) qui consiste à appeler plusieurs fois une même méthode avec des paramètres différents
         return calculateSalary(1);
     }
+
+    public static int showNbrEmployees() {
+        return nbrEmployees;
+    }
 }
