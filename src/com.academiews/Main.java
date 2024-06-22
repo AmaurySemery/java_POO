@@ -41,11 +41,21 @@ public static int calculateSalary(int baseSalary, int extraHours, int hourlyRate
 
  */
 
+ /* 
+ Exemple de correction d'un code procédural en POO
+
  public static void main(String[] args) {
     var employee = new Employee();
     employee.setBaseSalary(30_000);
     employee.setHourlyRate(35);
     System.out.println(employee.calculateSalary(20));
+ }
+
+ */
+
+ public static void main(String[] args) {
+    var browser = new Browser();
+    browser.navigate("academiews.fr");
  }
 
 }
