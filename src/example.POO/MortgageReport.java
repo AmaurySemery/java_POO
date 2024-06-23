@@ -4,21 +4,30 @@ import java.text.NumberFormat;
 
 public class MortgageReport {
 
-    public static void showPaymentSchedule(int amount, float annualInterest, byte years) {
+    private MortgageCalculator calculator;
+
+    public MortgageReport(MortgageCalculator calculator) {
+        this.calculator = calculator;
+    }
+
+    public void showPaymentSchedule() {
         System.out.println();
         System.out.println("-------------------------");
         System.out.println("Calendrier de paiement : ");
         System.out.println("-------------------------");
 
-        for (short month = 1; month <= years * ProjectToRefactor.MONTHS_IN_Year; month++) {
-            double balance = ProjectToRefactor.calculateBalance(amount, annualInterest, years, month);
+        for (short month = 1; month <= calculator.getYears() * MortgageCalculator.MONTHS_IN_YEAR; month++) {
+            //var calculator = new MortgageCalculator(amount, annualInterest, years);
+            double balance = calculator.calculateBalance(month);
             System.out.println(NumberFormat.getCurrencyInstance().format(balance));
         }
     }
 
-    public static void showMortgage(double mortgage) {
+    public void showMortgage() {
 
-        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(morgage);
+        //var calculator = new MortgageCalculator(amount, annualInterest, years);
+        double mortgage = calculator.calculateMortgage();
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
 
         System.out.println();
         System.out.println("-------------------------");
