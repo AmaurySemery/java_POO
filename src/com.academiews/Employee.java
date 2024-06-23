@@ -56,4 +56,8 @@ public class Employee {
     public static int showNbrEmployees() {
         return nbrEmployees;
     }
+
+    protected void showSomethingInConsole() {
+        System.out.println("Hello");
+    }
 }

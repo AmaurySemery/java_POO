@@ -63,6 +63,7 @@ public static int calculateSalary(int baseSalary, int extraHours, int hourlyRate
 
 */
 
+/* 
 // Exemple avec utilisation d'un constructeur
 public static void main(String[] args) {
     var employee = new Employee(50_000, 50);
@@ -73,6 +74,25 @@ public static void main(String[] args) {
 
     System.out.println(Employee.showNbrEmployees());
 
+}
+*/
+
+/* 
+// Héritage
+public static void main(String[] args) {
+    var accountant = new Accountant(50_000, 50);
+    System.out.println(accountant.calculateSalary(20));
+}
+*/
+
+public static void main(String[] args) {
+    var obj = new Object();
+    obj.getClass(); // metadata
+    obj.toString(); // string representation
+    obj.hashCode(); // address of the object in memory
+
+    var accountant = new Accountant(50_000);
+    System.out.println(accountant.hashCode());
 }
 
 }
