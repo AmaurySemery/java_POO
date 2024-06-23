@@ -13,10 +13,10 @@ public class Console {
         while (true) {
             System.out.print(prompt);
             value = scanner.nextFloat();
-            if(value >= min && value <= max)
+            if (value >= min && value <= max)
                 break;
             System.out.println("Veuillez rentrer une valeur entre " + min + " et " + max);
-            
+
         }
 
         return value;
@@ -26,5 +26,5 @@ public class Console {
 
         return scanner.nextDouble();
     }
-    
+
 }
