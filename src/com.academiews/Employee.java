@@ -61,5 +61,5 @@ public abstract class Employee {
         System.out.println("Hello !");
     }
 
-    public abstract void work();
+    public abstract void work(); // classe abstraite
 }
