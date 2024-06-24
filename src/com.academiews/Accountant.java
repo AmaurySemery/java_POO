@@ -2,6 +2,8 @@ package com.academiews;
 
 public class Accountant extends Employee {
 
+    private int prime = 10_000;
+
     public Accountant(int baseSalary) {
         super(baseSalary);
     }
@@ -22,6 +24,18 @@ public class Accountant extends Employee {
         for(int i = 0; i < this.getCustomersList.length; i++) {
             System.out.println(this.getCustomersList[i]);
         }
+    }
+
+    @Override
+    public int calculateSalary(int extraHours) {
+        return this.getBaseSalary() + (extraHours * this.getHourlyRate()) + prime;
+    }
+
+    @Override
+    public String toString() {
+        String msg = "Cet employé a une prime de " + prime;
+        System.out.println(msg);
+        return msg;
     }
 
 }

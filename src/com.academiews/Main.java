@@ -85,6 +85,8 @@ public static void main(String[] args) {
 }
 */
 
+/*
+// Heritage 2
 public static void main(String[] args) {
     var obj = new Object();
     obj.getClass(); // metadata
@@ -94,5 +96,22 @@ public static void main(String[] args) {
     var accountant = new Accountant(50_000);
     System.out.println(accountant.hashCode());
 }
+*/
+
+/* 
+// Heritage 3
+public static void main(String[] args) {
+    var employee = new Employee(50_000);
+    employee.showSomethingInConsole();
+}
+*/
+
+// Overriding
+public static void main(String[] args) {
+    var accountant = new Accountant(50_000);
+    System.out.println(accountant.calculateSalary(0));
+    accountant.toString();
+}
+
 
 }
