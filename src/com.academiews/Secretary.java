@@ -10,7 +10,10 @@ public class Secretary extends Employee {
         super(baseSalary, hourlyRate);
     }
 
-
+    @Override
+    public void work() {
+        System.out.println("Je fais un boulot de secrétaire");
+    }
     
 
 }

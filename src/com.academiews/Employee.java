@@ -1,6 +1,6 @@
 package com.academiews;
 
-public class Employee {
+public abstract class Employee {
     // Ces données sont privées car on souhaite les protéger
     private int baseSalary;
     private int hourlyRate;
@@ -60,4 +60,6 @@ public class Employee {
     protected void showSomethingInConsole() {
         System.out.println("Hello !");
     }
+
+    public abstract void work();
 }

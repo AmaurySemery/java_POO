@@ -121,6 +121,7 @@ public static void main(String[] args) {
 
     for(var employee : listEmployees) {
         System.out.println(employee.calculateSalary());
+        employee.work();
     }
 }
 

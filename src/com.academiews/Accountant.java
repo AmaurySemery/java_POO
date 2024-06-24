@@ -38,4 +38,9 @@ public class Accountant extends Employee {
         return msg;
     }
 
+    @Override
+    public void work() {
+        System.out.println("Je fais un boulot de comptable");
+    }
+
 }
