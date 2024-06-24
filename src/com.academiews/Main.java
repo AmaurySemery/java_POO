@@ -106,12 +106,22 @@ public static void main(String[] args) {
 }
 */
 
+/* 
 // Overriding
 public static void main(String[] args) {
     var accountant = new Accountant(50_000);
     System.out.println(accountant.calculateSalary(0));
     accountant.toString();
 }
+*/
 
+// Polymorphisme
+public static void main(String[] args) {
+    Employee [] listEmployees = { new Accountant(50_000), new Secretary(30_000, 20)};
+
+    for(var employee : listEmployees) {
+        System.out.println(employee.calculateSalary());
+    }
+}
 
 }
