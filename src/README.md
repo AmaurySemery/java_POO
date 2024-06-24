@@ -1,6 +1,6 @@
 L'encapsulation : c'est un principe de développement de classe qui consiste à protéger l'état des attributs et à imposer de passer par des méthodes pour modifier les valeurs des attributs.
 
-```
+```java
 public class Person {
     // Champs privés
     private String name;
@@ -38,7 +38,7 @@ public class Person {
 
 Un constructeur : une méthode particulière que déclenche automatiquement lors de l'instanciation (de la création) d'un objet. Une classe peut posséder plusieurs constructeurs, mais un objet donné n'aura pu être produit que par un seul constructeur.
 
-```
+```java
 public class Person {
     private String name;
     private int age;
@@ -64,7 +64,7 @@ public class Person {
 
 L'abstraction : technique qui cache les détails de l'implémentation, permettant aux programmeurs de se concentrer sur les caractéristiques essentielles d'un objet. Elle améliore l'interaction de l'utilisateur avec le système et protège le code et les données sous-jacents.
 
-```
+```java
 abstract class Animal {
     // Méthode abstraite (sans implémentation)
     public abstract void makeSound();
@@ -78,7 +78,7 @@ abstract class Animal {
 
 Overloading (surcharge) : fonctionnalité qui permet de définir plusieurs méthodes dans la même classe avec le même nom mais avec des paramètres différents (par le nombre, le type ou l'ordre des paramètres). Cela permet à une méthode de se comporter différemment en fonction des arguments qui lui sont passés.L'overloading en Java, ou surcharge en français, est une fonctionnalité qui permet de définir plusieurs méthodes dans la même classe avec le même nom mais avec des paramètres différents (par le nombre, le type ou l'ordre des paramètres). Cela permet à une méthode de se comporter différemment en fonction des arguments qui lui sont passés.
 
-```
+```java
 public class MathUtils {
     // Méthode add avec deux paramètres int
     public int add(int a, int b) {
@@ -99,7 +99,7 @@ public class MathUtils {
 
 Overriding (redéfinition) : fonctionnalité qui permet à une sous-classe de fournir une implémentation spécifique d'une méthode déjà définie dans sa superclasse. La méthode redéfinie doit avoir la même signature (même nom, mêmes paramètres) et le même type de retour que la méthode de la superclasse.
 
-```
+```java
 class Animal {
     // Méthode dans la superclasse
     public void makeSound() {
@@ -119,7 +119,7 @@ class Dog extends Animal {
 Polymorphisme : concept de la programmation orientée objet qui permet d'utiliser une seule interface pour représenter différents types d'objets. Il se manifeste principalement sous deux formes : le polymorphisme à la compilation (surcharge de méthode) et le polymorphisme à l'exécution (redéfinition de méthode).
 
 Exemple par override
-```
+```java
 class Animal {
     public void makeSound() {
         System.out.println("Some generic animal sound");
@@ -142,7 +142,7 @@ class Cat extends Animal {
 ```
 
 Exemple par overloading
-```
+```java
 class MathOperations {
     // Surcharge de la méthode add avec deux paramètres int
     public int add(int a, int b) {
