@@ -115,6 +115,7 @@ public static void main(String[] args) {
 }
 */
 
+/* 
 // Polymorphisme
 public static void main(String[] args) {
     Employee [] listEmployees = { new Accountant(50_000), new Secretary(30_000, 20)};
@@ -123,6 +124,12 @@ public static void main(String[] args) {
         System.out.println(employee.calculateSalary());
         employee.work();
     }
+}
+*/
+
+// Interface
+public static void main(String[] args) {
+    
 }
 
 }
