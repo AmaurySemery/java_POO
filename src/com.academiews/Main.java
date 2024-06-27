@@ -131,12 +131,12 @@ public static void main(String[] args) {
 public static void main(String[] args) {
     var vatReduced = new VatReduced(20_000);
     var vatReport = new VatReport();
-    vatReport.setVatCalculator(vatReduced);
-    vatReport.showTtcReport();
+    //vatReport.setVatCalculator(vatReduced);
+    vatReport.showTtcReport(vatReduced);
 
     var vatNormal = new VatNormal(10_000);
-    vatReport.setVatCalculator(vatNormal);
-    vatReport.showTtcReport();
+    //vatReport.setVatCalculator(vatNormal);
+    vatReport.showTtcReport(vatNormal);
 
 
 }
