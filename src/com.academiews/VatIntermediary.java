@@ -1,7 +1,6 @@
 package com.academiews;
 
-public class VatNormal implements VatCalculator {
-
+public class VatIntermediary implements VatCalculator {
     private int amountHT;
 
     public VatNormal(int amountHT) {
@@ -18,8 +17,6 @@ public class VatNormal implements VatCalculator {
 
     @Override
     public double calculateTTC() {
-        return this.amountHT * 1.2;
+        return this.amountHT * 1.1;
     }
-
-    
 }
