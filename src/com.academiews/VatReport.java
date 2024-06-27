@@ -1,14 +1,14 @@
 package com.academiews;
 
 public class VatReport {
-    private VatNormal vat; // 20%
+    private VatCalculator vatCalculator;
 
-    public VatReport() {
-        vat = new VatNormal(1000);
+    public VatReport(VatCalculator vat) {
+        this.vatCalculator = vat;
     }
 
     public void showTtcReport() {
-        var ttc = vat.calculateTTC();
+        var ttc = vatCalculator.calculateTTC();
         System.out.println(ttc);
     }
 }
