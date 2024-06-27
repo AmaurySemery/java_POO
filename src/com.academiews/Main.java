@@ -129,7 +129,10 @@ public static void main(String[] args) {
 
 // Interface
 public static void main(String[] args) {
-    
+    var vatCalculator = new VatReduced(20_000);
+    var vatReport = new VatReport(vatCalculator);
+    vatReport.showTtcReport();
+
 }
 
 }

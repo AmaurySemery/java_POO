@@ -3,7 +3,7 @@ package com.academiews;
 public class VatIntermediary implements VatCalculator {
     private int amountHT;
 
-    public VatNormal(int amountHT) {
+    public VatIntermediary(int amountHT) {
         this.amountHT = amountHT;
     }
 
