@@ -129,11 +129,15 @@ public static void main(String[] args) {
 
 // Interface
 public static void main(String[] args) {
-    // var vatCalculator = new VatNormal(20_000);
-    // var vatCalculator = new VatIntermediary(20_000);
-    var vatCalculator = new VatReduced(20_000);
-    var vatReport = new VatReport(vatCalculator);
+    var vatReduced = new VatReduced(20_000);
+    var vatReport = new VatReport();
+    vatReport.setVatCalculator(vatReduced);
     vatReport.showTtcReport();
+
+    var vatNormal = new VatNormal(10_000);
+    vatReport.setVatCalculator(vatNormal);
+    vatReport.showTtcReport();
+
 
 }
 
